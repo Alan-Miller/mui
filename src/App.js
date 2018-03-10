@@ -7,6 +7,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Avatar from 'material-ui/Avatar';
 import Dialog from 'material-ui/Dialog';
 import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Alan from './question.jpg';
 
@@ -71,6 +72,13 @@ class App extends Component {
           label="Confirm You're Awesome"
           onClick={() => this.setState({ dialog: true })}
         />
+
+        <Paper
+          style={{ width: '400px', height: '550px', margin: '0 auto' }}
+          rounded={true}
+          zDepth={4}
+        >
+        </Paper>
 
       </div>
     );
