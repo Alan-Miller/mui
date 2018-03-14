@@ -9,7 +9,7 @@ import Dialog from 'material-ui/Dialog';
 import RaisedButton from 'material-ui/RaisedButton';
 import Paper from 'material-ui/Paper';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
-import Alan from './question.jpg';
+import Alan from './pizza.jpg';
 
 class App extends Component {
   constructor() {
@@ -26,7 +26,7 @@ class App extends Component {
         <AppBar
           onLeftIconButtonClick={() => this.setState({ drawer: !this.state.drawer })}
           showMenuIconButton={true}
-          title={`AppBar Title`}
+          title={`Pizza Bar`}
           style={{ height: '100px', display: 'flex', alignItems: 'center' }}
           iconElementLeft={
             <FloatingActionButton
@@ -56,12 +56,12 @@ class App extends Component {
           <MenuItem>Third</MenuItem>
         </Drawer>
         <Dialog
-          title="Click if you're awesome :)"
+          title="Click if you like pizza :)"
           open={this.state.dialog}
           actions={
             <RaisedButton
               secondary={true}
-              label="Confirmed!"
+              label="Yes for pizza!"
               onClick={() => this.setState({ dialog: false })}
             />
           }
@@ -69,7 +69,7 @@ class App extends Component {
 
         <RaisedButton
           secondary={true}
-          label="Confirm You're Awesome"
+          label="Confirm You Like Pizza"
           onClick={() => this.setState({ dialog: true })}
         />
 
